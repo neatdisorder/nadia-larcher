@@ -1,6 +1,7 @@
 "use client";
 import styles from "@/components/Menu/Menu.module.scss";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Menu({ content }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,40 +24,40 @@ export default function Menu({ content }) {
           />
         </div>
         <div className={styles.internalLinks}>
-          <a className={styles.titleLink} href="/">
+          <Link className={styles.titleLink} href="/">
             NADIA LARCHER
-          </a>
+          </Link>
           <p className={styles.menuSeparator}>•</p>
-          <a className={styles.menuLink} href="/">
+          <Link className={styles.menuLink} href="/">
             MÚSICA
-          </a>
+          </Link>
           <p className={styles.menuSeparator}>•</p>
-          <a className={styles.menuLink} href="/">
+          <Link className={styles.menuLink} href="/">
             INVESTIGACIÓN
-          </a>
+          </Link>
           <p className={styles.menuSeparator}>•</p>
-          <a className={styles.menuLink} href="/">
+          <Link className={styles.menuLink} href="/">
             TALLERES
-          </a>
+          </Link>
           <p className={styles.menuSeparator}>•</p>
-          <a className={styles.menuLink} href="/">
+          <Link className={styles.menuLink} href="/">
             CONTACTO
-          </a>
+          </Link>
           <p className={styles.menuSeparator}>•</p>
-          <a className={styles.menuLink} href="/">
+          <Link className={styles.menuLink} href="/">
             ENGLISH
-          </a>
+          </Link>
         </div>
         <div className={styles.socialMediaContainer}>
-          <a href="/">
+          <Link href="https://www.youtube.com/@nadia.larcher">
             <img src="/assets/icons/youtube-icon.svg" alt="Youtube Icon" />
-          </a>
-          <a href="/">
+          </Link>
+          <Link href="https://www.instagram.com/nadia_larcher/">
             <img src="/assets/icons/instagram-icon.svg" alt="Instagram Icon" />
-          </a>
-          <a href="/">
+          </Link>
+          <Link href="https://open.spotify.com/artist/7qCEjoCmUjJ0F8ACB0WUX5?si=C0xiV61TSemzzp6crbM8Bw">
             <img src="/assets/icons/spotify-icon.svg" alt="Spotify Icon" />
-          </a>
+          </Link>
         </div>
       </nav>
     </div>
