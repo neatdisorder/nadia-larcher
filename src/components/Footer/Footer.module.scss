@@ -1,0 +1,15 @@
+.footerContainer {
+  margin-top: 16px;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--font-color);
+  width: 100%;
+
+  p {
+    font-family: "DM Sans", "DM Sans Fallback", "sans-serif";
+    color: var(--bg-color);
+    text-align: center;
+  }
+}

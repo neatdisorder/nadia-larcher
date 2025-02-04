@@ -1,0 +1,111 @@
+.menuContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+  padding: 16px 32px;
+  max-height: 500px;
+  transition: max-height 500ms;
+  overflow: hidden;
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .iconContainer {
+      position: absolute;
+      top: 18px;
+      right: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      img {
+        height: 24px;
+      }
+    }
+
+    .internalLinks {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        font-family: "Mohave", "Mohave Fallback", "sans-serif";
+        text-decoration: none;
+        font-size: 24px;
+
+        &:hover {
+          color: var(--font-link-color);
+        }
+      }
+
+      .titleLink {
+        margin-bottom: 16px;
+      }
+
+      .menuSeparator {
+        display: none;
+        line-height: 30px;
+      }
+
+      .menuLink {
+        color: var(--font-color);
+      }
+    }
+
+    .socialMediaContainer {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          height: 24px;
+        }
+      }
+    }
+  }
+
+  &.closed {
+    max-height: 66px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .menuContainer {
+    display: flex;
+    justify-content: center;
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1024px;
+
+      .iconContainer {
+        display: none;
+      }
+
+      .internalLinks {
+        flex-direction: row;
+        gap: 8px;
+
+        .titleLink {
+          margin-bottom: 0px;
+        }
+
+        .menuSeparator {
+          display: block;
+        }
+      }
+    }
+  }
+}
