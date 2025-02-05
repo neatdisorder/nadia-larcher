@@ -28,7 +28,7 @@ export default function Menu({ content }) {
             NADIA LARCHER
           </Link>
           <p className={styles.menuSeparator}>•</p>
-          <Link className={styles.menuLink} href="/">
+          <Link className={styles.menuLink} href="/es/musica">
             MÚSICA
           </Link>
           <p className={styles.menuSeparator}>•</p>

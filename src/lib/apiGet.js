@@ -1,5 +1,8 @@
 export default async function apiGet({ locale, type, slug }) {
   try {
+    console.log(
+      `API GET A: https://nadialarcher.com/panel/api/${locale}/${type}/${slug}`
+    );
     let data;
 
     const res = await fetch(

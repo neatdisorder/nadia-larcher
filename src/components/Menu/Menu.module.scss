@@ -8,6 +8,7 @@
   max-height: 500px;
   transition: max-height 500ms;
   overflow: hidden;
+  z-index: 1000;
 
   nav {
     display: flex;

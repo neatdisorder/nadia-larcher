@@ -3,11 +3,11 @@ import Menu from "@/components/Menu/Menu";
 import Footer from "@/components/Footer/Footer";
 import PageBuilder from "@/components/PageBuilder/PageBuilder";
 
-export async function generateMetadata({ params: { locale } }) {
+export async function generateMetadata({ params: { locale, slug } }) {
   const data = await apiGet({
     locale: locale,
     type: "page",
-    slug: "homepage",
+    slug: slug.join('/'),
   });
 
   return {
@@ -16,11 +16,11 @@ export async function generateMetadata({ params: { locale } }) {
   };
 }
 
-export default async function Home({ params: { locale } }) {
+export default async function Page({ params: { locale, slug } }) {
   const data = await apiGet({
     locale: locale,
     type: "page",
-    slug: "homepage",
+    slug: slug.join('/'),
   });
 
   return (
