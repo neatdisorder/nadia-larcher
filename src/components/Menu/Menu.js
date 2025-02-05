@@ -33,7 +33,7 @@ export default function Menu({ content }) {
           </Link>
           <p className={styles.menuSeparator}>•</p>
           <Link className={styles.menuLink} href="/">
-            INVESTIGACIÓN
+            VIDEOS
           </Link>
           <p className={styles.menuSeparator}>•</p>
           <Link className={styles.menuLink} href="/">
