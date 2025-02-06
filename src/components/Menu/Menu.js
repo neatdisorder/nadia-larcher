@@ -24,7 +24,7 @@ export default function Menu({ content }) {
           />
         </div>
         <div className={styles.internalLinks}>
-          <Link className={styles.titleLink} href="/">
+          <Link className={styles.titleLink} href="/es">
             NADIA LARCHER
           </Link>
           <p className={styles.menuSeparator}>•</p>

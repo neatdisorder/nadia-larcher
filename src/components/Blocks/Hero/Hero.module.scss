@@ -1,6 +1,6 @@
 .heroContainer {
-  width: 100vw;
-  height: calc(100vh - 66px);
+  width: 100%;
+  height: calc(100vh - var(--menu-size));
 
   .heroImage {
     width: 100%;

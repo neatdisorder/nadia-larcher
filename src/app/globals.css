@@ -2,6 +2,7 @@
   --bg-color: #efefef;
   --font-color: #1e1e1e;
   --font-link-color: #89506d;
+  --menu-size: 56px;
 }
 
 * {
@@ -17,7 +18,7 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: "DM Sans", "DM Sans Fallback", sans-serif;
-  margin-top: 66px;
+  margin-top: var(--menu-size);
 }
 
 main {
@@ -26,6 +27,7 @@ main {
   align-items: center;
   gap: 32px;
   margin-bottom: 32px;
+  width: 100%;
 }
 
 /* MARGINS */
