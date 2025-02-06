@@ -32,7 +32,7 @@ export default function Menu({ content }) {
             MÚSICA
           </Link>
           <p className={styles.menuSeparator}>•</p>
-          <Link className={styles.menuLink} href="/">
+          <Link className={styles.menuLink} href="/es/videos">
             VIDEOS
           </Link>
           <p className={styles.menuSeparator}>•</p>
