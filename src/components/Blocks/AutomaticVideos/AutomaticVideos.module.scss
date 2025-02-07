@@ -3,3 +3,9 @@
     flex-direction: column;
     gap: 32px;
 }
+
+@media only screen and (min-width: 1024px) {
+    .videosContainer {
+        flex-direction: row;
+    }
+}
