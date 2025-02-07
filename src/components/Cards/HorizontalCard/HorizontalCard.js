@@ -14,7 +14,7 @@ export default function HorizontalCard({ content }) {
       )}
       <div className={styles.textContainer}>
         {content.title && <h2>{content.title}</h2>}
-        {content.subtitle && <h3>{content.subtitle}</h3>}
+        {content.subtitle && <p className={styles.subtitle}>{content.subtitle}</p>}
         {content.description && <p>{content.description}</p>}
         {content.links && (
           <div className={styles.linksContainer}>

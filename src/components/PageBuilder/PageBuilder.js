@@ -3,6 +3,7 @@ import Heading from "@/components/Blocks/Heading/Heading";
 import Text from "@/components/Blocks/Text/Text";
 import AutomaticAlbums from "../Blocks/AutomaticAlbums/AutomaticAlbums";
 import TopSeparator from "../Blocks/TopSeparator/TopSeparator";
+import AutomaticVideos from "../Blocks/AutomaticVideos/AutomaticVideos";
 
 export default function PageBuilder({ content }) {
   const blocks = {
@@ -10,6 +11,7 @@ export default function PageBuilder({ content }) {
     heading_block: Heading,
     text_block: Text,
     automatic_albums_block: AutomaticAlbums,
+    automatic_videos_block: AutomaticVideos
   };
 
   return (

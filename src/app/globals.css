@@ -3,6 +3,8 @@
   --font-color: #1e1e1e;
   --font-link-color: #89506d;
   --menu-size: 56px;
+  --body-font: "DM Sans", "DM Sans Fallback", sans-serif;
+  --header-font: "Mohave", "Mohave Fallback", sans-serif;
 }
 
 * {
@@ -17,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "DM Sans", "DM Sans Fallback", sans-serif;
+  font-family: var(--body-font);
   margin-top: var(--menu-size);
 }
 
@@ -52,7 +54,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Mohave", "Mohave Fallback", sans-serif;
+  font-family: var(--header-font);
   font-weight: 600;
 }
 
