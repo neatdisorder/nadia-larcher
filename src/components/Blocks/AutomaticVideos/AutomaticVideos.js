@@ -15,7 +15,7 @@ export default function AutomaticVideos({ content }) {
                 description: content.field_description,
                 image: content.field_image,
                 embed: content.field_video_embed,
-                link: content.field_link.uri
+                link: content.field_link ? content.field_link.uri : null,
               }}
             />
           );

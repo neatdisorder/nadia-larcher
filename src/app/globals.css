@@ -60,6 +60,12 @@ h6 {
 
 a {
   color: var(--font-link-color);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
 }
 
 /* SLICK STYLES */
