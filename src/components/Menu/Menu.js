@@ -39,11 +39,11 @@ export default function Menu({ content }) {
               VIDEOS
             </Link>
             <p className={styles.menuSeparator}>•</p>
-            <Link className={styles.menuLink} href="/">
+            <Link className={styles.menuLink} href="/es/contacto">
               CONTACTO
             </Link>
             <p className={styles.menuSeparator}>•</p>
-            <Link className={styles.menuLink} href="/">
+            <Link className={styles.menuLink} href="/en">
               ENGLISH
             </Link>
           </div>

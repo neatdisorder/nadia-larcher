@@ -1,0 +1,58 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .imageContainer {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+
+    .linksContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      .linkContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+
+        .iconContainer {
+          width: 24px;
+          display: flex;
+          align-items: center;
+
+          img {
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .contactContainer {
+    flex-direction: row;
+    gap: 32px;
+
+    .imageContainer {
+      width: 50%;
+    }
+
+    .textContainer {
+      width: 50%;
+      justify-content: center;
+      gap: 16px;
+    }
+  }
+}
