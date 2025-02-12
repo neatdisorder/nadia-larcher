@@ -5,6 +5,7 @@ import AutomaticAlbums from "../Blocks/AutomaticAlbums/AutomaticAlbums";
 import TopSeparator from "../Blocks/TopSeparator/TopSeparator";
 import AutomaticVideos from "../Blocks/AutomaticVideos/AutomaticVideos";
 import Contact from "../Blocks/Contact/Contact";
+import AutomaticConcerts from "../Blocks/AutomaticConcerts/AutomaticConcerts";
 
 export default function PageBuilder({ content }) {
   const blocks = {
@@ -14,6 +15,7 @@ export default function PageBuilder({ content }) {
     automatic_albums_block: AutomaticAlbums,
     automatic_videos_block: AutomaticVideos,
     contact_block: Contact,
+    automatic_concerts_block: AutomaticConcerts,
   };
 
   return (
