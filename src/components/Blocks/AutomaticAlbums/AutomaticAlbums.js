@@ -15,7 +15,8 @@ export default function AutomaticAlbums({ content }) {
                 description: content.field_description,
                 image: content.field_image,
                 embed: content.field_spotify_embed,
-                links: content.field_links
+                links: content.field_links,
+                modal: content.field_credits,
               }}
             />
           );
