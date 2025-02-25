@@ -1,9 +1,15 @@
 "use client";
 import styles from "@/components/Menu/Menu.module.scss";
-import { useState } from "react";
+import { useState, Fragment } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Menu({ content }) {
+
+  // Traemos el pathname de la URL
+
+  const pathname = usePathname();
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -27,25 +33,19 @@ export default function Menu({ content }) {
             />
           </div>
           <div className={styles.internalLinks}>
-            <Link className={styles.titleLink} href="/es">
-              NADIA LARCHER
+            <Link className={styles.titleLink + (pathname === '/es' ? styles.active : "")} href="/es">
+              {content.title}
             </Link>
-            <p className={styles.menuSeparator}>•</p>
-            <Link className={styles.menuLink} href="/es/musica">
-              MÚSICA
-            </Link>
-            <p className={styles.menuSeparator}>•</p>
-            <Link className={styles.menuLink} href="/es/videos">
-              VIDEOS
-            </Link>
-            <p className={styles.menuSeparator}>•</p>
-            <Link className={styles.menuLink} href="/es/contacto">
-              CONTACTO
-            </Link>
-            <p className={styles.menuSeparator}>•</p>
-            <Link className={styles.menuLink} href="/en">
-              ENGLISH
-            </Link>
+            {content.links.map((link, key) => {
+              return (
+                <Fragment key={key}>
+                  <p className={styles.menuSeparator}>•</p>
+                  <Link className={styles.menuLink + (pathname === link.url ? styles.active : "")} href={link.url}>
+                    {link.title}
+                  </Link>
+                </Fragment>
+              );
+            })}
           </div>
           <div className={styles.socialMediaContainer}>
             <Link href="https://www.youtube.com/@nadia.larcher">

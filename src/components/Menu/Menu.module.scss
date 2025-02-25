@@ -33,19 +33,21 @@
       display: flex;
       flex-direction: column;
       gap: 16px;
-
+      
       a {
         font-family: "Mohave", "Mohave Fallback", "sans-serif";
         text-decoration: none;
         font-size: 24px;
+        line-height: 1;
+        text-transform: uppercase;
 
         &:hover {
           color: var(--font-link-color);
         }
+
       }
 
       .titleLink {
-        line-height: 1;
         margin-bottom: 16px;
       }
 
@@ -55,8 +57,12 @@
 
       .menuLink {
         color: var(--font-color);
-        line-height: 1;
+
+        &.active {
+          color: var(--font-link-color);
+        }
       }
+
     }
 
     .socialMediaContainer {
@@ -104,6 +110,7 @@
 
         .titleLink {
           margin-bottom: 0px;
+          color: var(--font-color)
         }
 
         .menuSeparator {

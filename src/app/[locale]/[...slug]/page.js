@@ -3,11 +3,12 @@ import Menu from "@/components/Menu/Menu";
 import Footer from "@/components/Footer/Footer";
 import PageBuilder from "@/components/PageBuilder/PageBuilder";
 
-export async function generateMetadata({ params: { locale, slug } }) {
+export async function generateMetadata({ params }) {
+  const { locale, slug } = await params;
+
   const data = await apiGet({
     locale: locale,
-    type: "page",
-    slug: slug.join('/'),
+    slug: slug.join("/"),
   });
 
   return {
@@ -16,11 +17,12 @@ export async function generateMetadata({ params: { locale, slug } }) {
   };
 }
 
-export default async function Page({ params: { locale, slug } }) {
+export default async function Page({ params }) {
+  const { locale, slug } = await params;
+
   const data = await apiGet({
     locale: locale,
-    type: "page",
-    slug: slug.join('/'),
+    slug: slug.join("/"),
   });
 
   return (
